@@ -1,0 +1,39 @@
+---
+title: "Markdown Slides"
+author: "Muxin Hua"
+date: "11/25/2021"
+output:
+  slidy_presentation: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Introduction
+
+-   *Name*: Muxin Hua
+-   *From*: Beijing, China
+-   *Degrees earned*: Bachelor of science, masters of science
+-   *Current*: Statistics Ph.D. program, first year
+
+## Favorite Animal
+![Alaska](buer2.jpg)
+
+## Plot
+
+```{r pressure, include=TRUE, echo=FALSE, cache=FALSE}
+library(ggplot2)
+
+library(mclust) 
+data(banknote)
+banknote$Status <- factor(banknote$Status)
+ggplot(banknote, aes(x=Diagonal, fill=Status))+
+  geom_histogram(bins = 15,
+                 color='black') +
+  scale_fill_manual(values = c("#CC9966","#666666"))
+```
+
+## CV Link
+[Resume](https://github.com/stat850-unl/11-presentation-Hiiiua/blob/master/resume.pdf)
+
