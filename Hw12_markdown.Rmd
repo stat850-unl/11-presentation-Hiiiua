@@ -3,6 +3,7 @@ title: "Markdown Slides"
 author: "Muxin Hua"
 date: "11/25/2021"
 output:
+  beamer_presentation: default
   slidy_presentation: default
 ---
 
